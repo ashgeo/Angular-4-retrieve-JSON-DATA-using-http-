@@ -13,8 +13,7 @@ export class PlayersComponent implements OnInit {
   constructor(private _playerService: PlayerService) { }
 
   ngOnInit() {
-    this._playerService.getPlayers().subscribe(resPlayerData => this.players = resPlayerData);
-    console.log(this.players);
+    this._playerService.getPlayers().subscribe(resPlayerData => this.players = resPlayerData);   
     
   }
 
